@@ -1,24 +1,120 @@
 #include <stdio.h>
-int main(){
 
-int idade, matricula;
-float altura; 
-char nome[50];
+// Super Trunfo
+// Desafio: nível novato
 
-printf("Digite a sua idade: \n");
-scanf("%d", &idade);
+int main() {
+    char cidade[20];
+    char estado;
+    int codigo;
+    int populacao, pontosturisticos;
+    float area, pib; 
+   
+   // Cadastro das informações (Primeira Cidade - Carta 2) ========================================================================================================
+    
+    printf("Prezado usuário, por favor insira os dados da Carta 1 representando a primeira cidade \n");
 
-printf("Digite sua altura: \n");
-scanf("%f", &altura);
+    printf("ESTADO: Insira uma letra de A até H para representar o estado: \n");
+    scanf(" %c", &estado);
 
-printf("Digite o seu nome: \n");
-scanf("%s", &nome);
+    // Validar a informação inserida do estado
+    while (estado < 'A' || estado > 'H') {
+        printf("Entrada inválida. Insira uma letra de A a H: ");
+        scanf(" %c", &estado);
+    }
+//-----------------------------------------------------------------
 
-printf("Digite a sua matrícula: \n");
-scanf("%d", &matricula);
+    printf("CÓDIGO DA CARTA: Insira um número de 1 a 4: \n");
+    scanf("%d", &codigo);
 
-printf("Nome do aluno: %s - Matrícula: %d", nome, matricula);
-printf("Idade: %d - Altura: %f.2", idade, altura);
+    // Validar a informação inserida no campo código
+    while (codigo < 1 || codigo > 4) {
+        printf("Entrada inválida. Insira um número de 1 a 4: ");
+        scanf("%d", &codigo);
+    }
+//-----------------------------------------------------------------
 
-return 0;
+    printf("Nome da Cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("População: \n");
+    scanf("%d", &populacao);
+
+    printf("Área (em km²): \n");
+    scanf("%f", &area);
+
+    printf("PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Número de Pontos Turísticos: \n");
+    scanf("%d", &pontosturisticos);
+
+    //Imprimindo as informações da CARTA 1----------------------------------------------------------
+    printf(" \n");
+    printf("Carta 1: \n");
+    printf("Estado: %c \n", estado);
+    printf("Código: %c0%d \n", estado, codigo);
+    //printf("Código: %s \n", codigo);
+    printf("Nome da Cidade: %s \n", cidade);
+    printf("População: %d \n", populacao);
+    printf("Área: %f km²\n", area);
+    printf("PIB: %f bilhões de reais \n", pib);
+    printf("Número de Pontos Turísticos: %d \n", pontosturisticos);
+    printf(" \n");
+    printf(" \n");
+
+     // Cadastro das informações (Primeira Cidade - Carta 2) ========================================================================================================
+    
+    printf("Prezado usuário, por favor insira os dados da Carta 2 representando a primeira cidade \n");
+
+    printf("ESTADO: Insira uma letra de A até H para representar o estado: \n");
+    scanf(" %c", &estado);
+
+    // Validar a informação inserida do estado
+    while (estado < 'A' || estado > 'H') {
+        printf("Entrada inválida. Insira uma letra de A a H: ");
+        scanf(" %c", &estado);
+    }
+//-----------------------------------------------------------------
+
+    printf("CÓDIGO DA CARTA: Insira um número de 1 a 4: \n");
+    scanf("%d", &codigo);
+
+    // Validar a informação inserida no campo código
+    while (codigo < 1 || codigo > 4) {
+        printf("Entrada inválida. Insira um número de 1 a 4: ");
+        scanf("%d", &codigo);
+    }
+//-----------------------------------------------------------------
+
+    printf("Nome da Cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("População: \n");
+    scanf("%d", &populacao);
+
+    printf("Área (em km²): \n");
+    scanf("%f", &area);
+
+    printf("PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Número de Pontos Turísticos: \n");
+    scanf("%d", &pontosturisticos);
+
+    //Imprimindo as informações da CARTA 2----------------------------------------------------------
+    printf(" \n");
+    printf("Carta 2: \n");
+    printf("Estado: %c \n", estado);
+    printf("Código: %c0%d \n", estado, codigo);
+    //printf("Código: %s \n", codigo);
+    printf("Nome da Cidade: %s \n", cidade);
+    printf("População: %d \n", populacao);
+    printf("Área: %f km²\n", area);
+    printf("PIB: %f bilhões de reais \n", pib);
+    printf("Número de Pontos Turísticos: %d \n", pontosturisticos);
+    printf(" \n");
+    printf(" \n");
+    
+    return 0;
 }
